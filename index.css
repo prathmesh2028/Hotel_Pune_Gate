@@ -1349,8 +1349,14 @@ button:focus-visible {
     }
 
     /* Hero */
+    .hero {
+        align-items: flex-start;
+        padding-top: 120px; /* Space for navbar */
+    }
+
     .hero-content {
-        padding-top: 140px; /* Ensure content clears the mobile navbar */
+        padding-top: 0;
+        padding-bottom: 40px;
     }
 
     .hero-badge {
