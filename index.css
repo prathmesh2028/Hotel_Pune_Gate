@@ -1349,6 +1349,14 @@ button:focus-visible {
     }
 
     /* Hero */
+    .hero-content {
+        padding-top: 140px; /* Ensure content clears the mobile navbar */
+    }
+
+    .hero-badge {
+        margin-bottom: 20px; /* Space out the badge from the title */
+    }
+
     .hero-title {
         font-size: clamp(2rem, 8vw, 3rem);
     }
@@ -1451,6 +1459,7 @@ button:focus-visible {
     /* Footer */
     .footer {
         padding-bottom: 80px; /* Space for floating button */
+        padding-top: 40px;
     }
 
     .footer-grid {
@@ -1593,7 +1602,7 @@ button:focus-visible {
 
 @media (max-width: 480px) {
     .sample-watermark::after {
-        top: 20px;
+        top: 80px; /* Move below navbar to avoid overlap with buttons/logo */
         bottom: auto;
     }
 }
