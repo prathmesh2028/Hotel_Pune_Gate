@@ -1,6 +1,6 @@
-# 🏨 Hotel Pune Gate — Website
+# 🏨 Hotel Pune Gate — Website (Sample UI)
 
-A modern, premium, single-page hotel website for **Hotel Pune Gate**, located near Navale Bridge on the Mumbai-Bangalore Highway, Pune.
+A modern, premium, single-page hotel website UI built as a **sample showcase project**.
 
 ![Hero Preview](images/hero.png)
 

@@ -1553,6 +1553,52 @@ button:focus-visible {
 }
 
 /* ============================================================
+   SAMPLE WATERMARK
+   ============================================================ */
+.sample-watermark {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    font-size: clamp(4rem, 15vw, 12rem);
+    font-family: var(--font-heading);
+    font-weight: 700;
+    color: var(--color-text-dark);
+    opacity: 0.03;
+    pointer-events: none;
+    z-index: 9999;
+    white-space: nowrap;
+    user-select: none;
+}
+
+/* Secondary fixed badge */
+.sample-watermark::after {
+    content: 'SAMPLE UI';
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    transform: none;
+    background: var(--color-primary);
+    color: var(--color-white);
+    font-family: var(--font-body);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+    opacity: 0.8;
+    pointer-events: none;
+    box-shadow: var(--shadow-sm);
+}
+
+@media (max-width: 480px) {
+    .sample-watermark::after {
+        top: 20px;
+        bottom: auto;
+    }
+}
+
+/* ============================================================
    ACCESSIBILITY — Reduced Motion
    ============================================================ */
 @media (prefers-reduced-motion: reduce) {
